@@ -1,11 +1,14 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import Image from 'next/image';
 import BackgroundImage from 'public/assets/background.avif';
+
+import Navbar from './components/Navbar';
 
 export default function Home() {
   return (
     <>
       <main className="flex flex-col">
-        {/* <Navbar /> */}
+        <Navbar />
         <section className="relative flex h-[1000px] w-full overflow-hidden">
           <Image
             src={BackgroundImage}
@@ -21,17 +24,17 @@ export default function Home() {
             style={{ zIndex: 1 }}
           />
         </section>
-        <section className="flex h-[1000px] w-full items-center justify-center bg-white">
+        <section className="flex h-[1000px] w-full items-center justify-center bg-section2">
           <div className="text-black">
             <h1>DRUGA SEKCIJA</h1>
           </div>
         </section>
-        <section className="flex h-[1000px] w-full items-center justify-center bg-section-3">
+        <section className="bg-section-3 flex h-[1000px] w-full items-center justify-center bg-section3">
           <div className="text-black">
             <h1>TRECA SEKCIJA</h1>
           </div>
         </section>
-        <section className="flex h-[1000px] w-full items-center justify-center bg-section-4">
+        <section className="flex h-[1000px] w-full items-center justify-center bg-white">
           <div className="text-black">
             <h1>CETVRTA SEKCIJA</h1>
           </div>
