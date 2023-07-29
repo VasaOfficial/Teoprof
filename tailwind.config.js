@@ -16,6 +16,9 @@ module.exports = {
     },
     extend: {
       colors: {
+        'section-3': '#78716C',
+        'section-4': '#FFFFF9',
+        footer: '#0E0F1B',
         gray: {
           100: '#f7fafc',
           200: '#edf2f7',
