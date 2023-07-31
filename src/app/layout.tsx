@@ -1,9 +1,12 @@
 import './global.css';
 
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Cabin } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const cabin = Cabin({
+  subsets: ['latin'],
+  variable: '--font-cabin',
+});
 
 export const metadata: Metadata = {
   generator: 'Next.js',
@@ -21,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cabin.className}>{children}</body>
     </html>
   );
 }
