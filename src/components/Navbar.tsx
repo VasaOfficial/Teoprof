@@ -23,7 +23,7 @@ export default function Navbar() {
     <nav className="fixed top-0 z-50 max-h-24 w-full bg-black">
       <div
         // eslint-disable-next-line tailwindcss/no-custom-classname
-        className={`${montserrat.variable} mx-auto flex max-w-[90%] items-center justify-between font-montserrat font-semibold`}
+        className={`${montserrat.variable} mx-auto flex max-w-[85%] items-center justify-between font-montserrat font-semibold`}
       >
         <Link href="/">
           <Image src={Logo} alt="logo" width={200} height={200} priority />
