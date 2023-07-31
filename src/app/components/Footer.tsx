@@ -7,7 +7,6 @@ export default function Footer() {
           id="gmap_canvas"
           width="800px"
           height="400px"
-          scrolling="no"
           src="https://maps.google.com/maps?width=700&amp;height=350&amp;hl=en&amp;q=Belgrade, Kneza Milosa 17&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         />
         <div className="flex flex-col italic text-white">
