@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import BackgroundImage from 'public/assets/background.avif';
 
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 
 export default function Home() {
@@ -40,7 +41,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="h-[300px] w-full bg-footer">FOOTER</footer>
+      <Footer />
     </>
   );
 }
