@@ -9,7 +9,9 @@ import Image from 'next/image';
 import BackgroundImage from 'public/assets/background.avif';
 import Section1 from '@/public/assets/section1.png';
 
-import Navbar from '../components/Navbar';
+
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 export default function Home() {
   const bottomRef = useRef<HTMLDivElement>(null);
@@ -80,9 +82,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer ref={bottomRef} className="h-[300px] w-full bg-footer">
-        FOOTER
-      </footer>
+      <Footer />
     </>
   );
 }
