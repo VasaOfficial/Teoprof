@@ -14,7 +14,7 @@
   bottom: 0px;
   left: 50%;
   width: calc(50% + 20px);
-  height: 3px; /* Adjust the height to make the underline thicker */
+  height: 3px;
   background-color: white;
   transform: translateX(-50%) scaleX(0);
   transition: transform 0.2s ease;
