@@ -2,6 +2,7 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 
 import Section1 from '@/components/Section1';
+import UpBtn from '@/components/ui/upButton';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import Section3 from '../components/Section3';
@@ -25,6 +26,7 @@ export default function Home() {
         </section>
       </main>
       <Footer />
+      <UpBtn />
     </>
   );
 }
