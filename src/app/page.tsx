@@ -9,8 +9,9 @@ import Image from 'next/image';
 import BackgroundImage from 'public/assets/background.avif';
 import Section1 from '@/public/assets/section1.png';
 
-import Footer from '@/components/Footer';
-import Navbar from '../components/Navbar';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Section3 from './components/Section3';
 
 export default function Home() {
   const footerRef = useRef<HTMLDivElement>(null);
@@ -70,11 +71,7 @@ export default function Home() {
             <h1>DRUGA SEKCIJA</h1>
           </div>
         </section>
-        <section className="bg-section-3 flex h-[1000px] w-full items-center justify-center bg-section3">
-          <div className="text-black">
-            <h1>TRECA SEKCIJA</h1>
-          </div>
-        </section>
+        <Section3 />
         <section className="flex h-[1000px] w-full items-center justify-center bg-white">
           <div className="text-black">
             <h1>CETVRTA SEKCIJA</h1>
