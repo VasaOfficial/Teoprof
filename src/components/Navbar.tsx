@@ -1,3 +1,5 @@
+'use client';
+
 import 'src/app/global.css';
 
 import { Montserrat } from 'next/font/google';
@@ -19,6 +21,14 @@ const montserrat = Montserrat({
 });
 
 export default function Navbar() {
+  const handleKontaktClick = () => {
+    const scrollPosition = document.body.scrollHeight - window.innerHeight;
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <nav className="fixed top-0 z-50 max-h-24 w-full bg-black">
       <div
@@ -40,11 +50,21 @@ export default function Navbar() {
                 Stolarija i Namestaj
               </MenubarTrigger>
               <MenubarContent className="font-semibold">
-                <MenubarItem>Stolovi</MenubarItem>
-                <MenubarItem>Stolice</MenubarItem>
-                <MenubarItem>Prozori</MenubarItem>
-                <MenubarItem>Stepenista</MenubarItem>
-                <MenubarItem>Vrata</MenubarItem>
+                <Link href="/pages/stolovi">
+                  <MenubarItem>Stolovi</MenubarItem>
+                </Link>
+                <Link href="/pages/stolice">
+                  <MenubarItem>Stolice</MenubarItem>
+                </Link>
+                <Link href="/pages/prozori">
+                  <MenubarItem>Prozori</MenubarItem>
+                </Link>
+                <Link href="/pages/stepeniste">
+                  <MenubarItem>Stepenista</MenubarItem>
+                </Link>
+                <Link href="/pages/vrata">
+                  <MenubarItem>Vrata</MenubarItem>
+                </Link>
               </MenubarContent>
             </MenubarMenu>
             <MenubarMenu>
@@ -52,16 +72,31 @@ export default function Navbar() {
                 Enterijer
               </MenubarTrigger>
               <MenubarContent className="font-semibold">
-                <MenubarItem>Spavace sobe</MenubarItem>
-                <MenubarItem>Dnevni boravak</MenubarItem>
-                <MenubarItem>Kuhinja</MenubarItem>
-                <MenubarItem>Kupatila</MenubarItem>
-                <MenubarItem>Hodnici</MenubarItem>
-                <MenubarItem>Trpezarija</MenubarItem>
+                <Link href="/pages/spavace-sobe">
+                  <MenubarItem>Spavace sobe</MenubarItem>
+                </Link>
+                <Link href="/pages/dnevne-sobe">
+                  <MenubarItem>Dnevni boravak</MenubarItem>
+                </Link>
+                <Link href="/pages/kuhinja">
+                  <MenubarItem>Kuhinja</MenubarItem>
+                </Link>
+                <Link href="/pages/kupatila">
+                  <MenubarItem>Kupatila</MenubarItem>
+                </Link>
+                <Link href="/pages/hodnici">
+                  <MenubarItem>Hodnici</MenubarItem>
+                </Link>
+                <Link href="/pages/trpezarija">
+                  <MenubarItem>Trpezarija</MenubarItem>
+                </Link>
               </MenubarContent>
             </MenubarMenu>
             <MenubarMenu>
-              <MenubarTrigger className="hover-underline-bolder cursor-pointer text-base font-semibold">
+              <MenubarTrigger
+                onClick={handleKontaktClick}
+                className="hover-underline-bolder cursor-pointer text-base font-semibold"
+              >
                 Kontakt
               </MenubarTrigger>
             </MenubarMenu>

@@ -9,7 +9,7 @@ export default function Section3() {
     <section className="bg-section-3 flex h-[2100px] w-full flex-row items-center justify-center gap-40 bg-section3">
       <div className="flex flex-col gap-36 text-black">
         <div className="flex flex-col items-center gap-10 text-3xl font-extrabold text-black">
-          <Link href="/">
+          <Link href="/pages/spavace-sobe">
             <Image
               className="rounded-lg"
               alt="spavace sobe"
@@ -21,10 +21,10 @@ export default function Section3() {
           <p>Spavace Sobe</p>
         </div>
         <div className="flex flex-col items-center gap-10 text-3xl font-extrabold text-black">
-          <Link href="/">
+          <Link href="/pages/kuhinja">
             <Image
               className="rounded-lg"
-              alt="kuhinje"
+              alt="kuhinja"
               src={Section1}
               width={650}
               height={507}
@@ -33,7 +33,7 @@ export default function Section3() {
           <p>Kuhinje</p>
         </div>
         <div className="flex flex-col items-center gap-10 text-3xl font-extrabold text-black">
-          <Link href="/">
+          <Link href="/pages/hodnici">
             <Image
               className="rounded-lg"
               alt="hodnici"
@@ -47,10 +47,10 @@ export default function Section3() {
       </div>
       <div className="flex flex-col gap-36 text-black ">
         <div className="flex flex-col items-center gap-10 text-3xl font-extrabold text-black">
-          <Link href="/">
+          <Link href="/pages/dnevne-sobe">
             <Image
               className="rounded-lg"
-              alt="dneven sobe"
+              alt="dnevne sobe"
               src={Section1}
               width={650}
               height={507}
@@ -59,7 +59,7 @@ export default function Section3() {
           <p>Dnevne Sobe</p>
         </div>
         <div className="flex flex-col items-center gap-10 text-3xl font-extrabold text-black">
-          <Link href="/">
+          <Link href="/pages/kupatila">
             <Image
               className="rounded-lg"
               alt="kupatila"
@@ -71,7 +71,7 @@ export default function Section3() {
           <p>Kupatila</p>
         </div>
         <div className="flex flex-col items-center gap-10 text-3xl font-extrabold text-black">
-          <Link href="/">
+          <Link href="/pages/trpezarija">
             <Image
               className="rounded-lg"
               alt="trpezarija"
