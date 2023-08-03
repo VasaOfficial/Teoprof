@@ -3,6 +3,8 @@ import './global.css';
 import type { Metadata } from 'next';
 import { Cabin } from 'next/font/google';
 
+import Navbar from '@/components/Navbar';
+
 const cabin = Cabin({
   subsets: ['latin'],
   variable: '--font-cabin',
@@ -25,7 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cabin.className}>{children}</body>
+      <body className={cabin.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
