@@ -2,18 +2,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Section1 from '@/public/assets/section1.png';
+import Section1Image from '@/public/assets/section1.png';
 
 export default function Section3() {
   return (
-    <section className="bg-section-3 flex h-[2100px] w-full flex-row items-center justify-center gap-40 bg-section3">
-      <div className="flex flex-col gap-36 text-black">
+    <section className="bg-section-3 flex h-auto w-full flex-row items-center justify-center gap-40 bg-section3">
+      <div className="my-24  flex flex-col gap-36 text-black">
         <div className="flex flex-col items-center gap-10 text-3xl font-extrabold text-black">
           <Link href="/pages/spavace-sobe">
             <Image
               className="rounded-lg"
               alt="spavace sobe"
-              src={Section1}
+              src={Section1Image}
               width={650}
               height={507}
             />
@@ -25,7 +25,7 @@ export default function Section3() {
             <Image
               className="rounded-lg"
               alt="kuhinja"
-              src={Section1}
+              src={Section1Image}
               width={650}
               height={507}
             />
@@ -37,7 +37,7 @@ export default function Section3() {
             <Image
               className="rounded-lg"
               alt="hodnici"
-              src={Section1}
+              src={Section1Image}
               width={650}
               height={507}
             />
@@ -51,7 +51,7 @@ export default function Section3() {
             <Image
               className="rounded-lg"
               alt="dnevne sobe"
-              src={Section1}
+              src={Section1Image}
               width={650}
               height={507}
             />
@@ -63,7 +63,7 @@ export default function Section3() {
             <Image
               className="rounded-lg"
               alt="kupatila"
-              src={Section1}
+              src={Section1Image}
               width={650}
               height={507}
             />
@@ -75,7 +75,7 @@ export default function Section3() {
             <Image
               className="rounded-lg"
               alt="trpezarija"
-              src={Section1}
+              src={Section1Image}
               width={650}
               height={507}
             />
