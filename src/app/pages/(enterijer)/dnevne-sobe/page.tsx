@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import Sto from '@/public/assets/sto.png';
 
-export default function Footer() {
+export default function DnevneSobe() {
   return (
     <section className="m-32 flex flex-col items-center">
       <h1 className="m-10 text-center text-4xl font-bold">Dnevne Sobe</h1>

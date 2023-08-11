@@ -5,7 +5,7 @@ import Sto from '@/public/assets/sto.png';
 export default function Hodnici() {
   return (
     <section className="m-32 flex flex-col items-center">
-      <h1 className="m-10 text-center text-4xl font-bold">Dnevne Sobe</h1>
+      <h1 className="m-10 text-center text-4xl font-bold">Hodnici</h1>
       <div className="mb-20 flex max-w-[90%] flex-col justify-start">
         <h2 className="mb-8 flex justify-start text-2xl font-bold text-black">
           Vrste Proizvoda
